@@ -9,6 +9,11 @@ fi
 name=$1
 pwd=`pwd`
 
+if [[ -d $pwd/$name ]]
+then
+    rm -r $pwd/$name
+fi
+
 #echo $pwd
 
 mkdir $pwd/$name
