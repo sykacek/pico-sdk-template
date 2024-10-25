@@ -1,6 +1,17 @@
+if [[ $# -ne 1 ]]
+then
+    echo "Invalid number of arguments"
+    echo "Usage: mkpico <project-name>"
+    exit 1
+fi
+
 #copy etries to /etc directory
 cp -r src/mkpico /etc
 
-#add binary executable
+#chmod
+chmod 755 uninstall.sh
+chmod 755 export.sh
 chmod 755 src/mkpico.bin
+
+#add binary executable
 cp src/mkpico.bin /usr/bin/mkpico
