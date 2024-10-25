@@ -1,0 +1,12 @@
+#! /bin/sh
+
+name=$1
+pwd=`pwd`
+
+#echo $pwd
+
+mkdir $pwd/$name
+cp -r /etc/mkpico/* $pwd/$name/
+
+sed -i "s/PROJECT_NAME example/PROJECT_NAME $name/g" $pwd/$name/CMakeLists.txt
+
