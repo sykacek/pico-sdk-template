@@ -1,6 +1,6 @@
-if [[ "$EUID" -ne 0 ]]
-  then echo "Please run with sudo"
-  exit
+if [[ "$EUID" -ne 0 ]]; then
+    echo "Please run with sudo"
+    exit
 fi
 
 #copy etries to /etc directory
