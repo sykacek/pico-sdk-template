@@ -1,3 +1,8 @@
+if [ "$EUID" -ne 0 ]
+  then echo "Please run with sudo"
+  exit
+fi
+
 #copy etries to /etc directory
 cp -r src/mkpico /etc
 

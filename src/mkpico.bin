@@ -11,7 +11,8 @@ pwd=`pwd`
 
 if [[ -d $pwd/$name ]]
 then
-    rm -r $pwd/$name
+    echo "Directory exists"
+    exit 1
 fi
 
 #echo $pwd
