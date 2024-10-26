@@ -15,8 +15,8 @@ fi
 pico=$1
 freertos=$2
 
-sed -i "s/pico-sdk-path-goes-here/$pico/g" export.sh
-sed -i "s/FreeRTOS-kernel-path-goes-here/$freertos/g" src/mkpico/CMakeLists.txt
+sed -i "s%pico-sdk-path-goes-here%$pico%g" export.sh
+sed -i "s%FreeRTOS-kernel-path-goes-here%$freertos%g" src/mkpico/CMakeLists.txt
 
 #copy etries to /etc directory
 cp -r src/mkpico /etc
