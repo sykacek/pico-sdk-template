@@ -1,1 +1,1 @@
-export PICO_SDK_PATH=/your-path-goes-there
+export PICO_SDK_PATH=/pico-sdk-path-goes-here

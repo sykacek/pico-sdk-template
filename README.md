@@ -9,10 +9,10 @@ Obtain executable privileges by
 
 afterwards run the script with root priviliges
 ```sh
-    sudo ./install.sh
+    sudo ./install.sh <pico-sdk-path> <freertos-kernel-path>
 ```
 
-This will create `/etc/mkpico` directory where the template is stored. Executable is copied to `/usr/bin`. Export script `export.sh` has to be run before building any pico-sdk projects, it has to be run only once for a terminal session (it sets environment variables which do not persist after rebooting). Export script is not a part of instalation process. Export script has to be sourced
+with required paths. This will create `/etc/mkpico` directory where the template is stored. Executable is copied to `/usr/bin`. Export script `export.sh` has to be run before building any pico-sdk projects, it has to be run only once for a terminal session (it sets environment variables which do not persist after rebooting). Export script has to be sourced
 ```sh
     source export.sh
 ```
