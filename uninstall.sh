@@ -1,2 +1,2 @@
-rm -r /stc/mkpico
+rm -r /etc/mkpico
 rm /usr/bin/mkpico
