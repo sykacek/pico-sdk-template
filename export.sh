@@ -1,1 +1,1 @@
-export PICO_SDK_PATH=pico-sdk-path-goes-here
+export PICO_SDK_PATH=/home/mike/c/MCU/pico-sdk

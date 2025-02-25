@@ -12,7 +12,11 @@ afterwards run the script with root priviliges
     sudo ./install.sh <pico-sdk-path> <freertos-kernel-path>
 ```
 
-with required paths. This will create `/etc/mkpico` directory where the template is stored. Executable is copied to `/usr/bin`. Export script `export.sh` has to be run before building any pico-sdk projects, it has to be run only once for a terminal session (it sets environment variables which do not persist after rebooting). Export script has to be sourced
+with required paths. You can also install using environmental variables e. g.:
+```sh
+    sudo ./install.sh ${PICO_SDK_PATH} ${FREERTOS_KERNEL_PATH}
+```
+Which will create `/etc/mkpico` directory where the template is stored. Executable is copied to `/usr/bin`. Export script `export.sh` has to be run before building any pico-sdk projects, it has to be run only once for a terminal session (it sets environment variables which do not persist after rebooting). Export script has to be sourced
 ```sh
     source export.sh
 ```
